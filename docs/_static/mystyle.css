@@ -1,0 +1,62 @@
+/* Google Fonts */
+/*
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDGothic:wght@400;700&display=swap');
+
+body {
+    font-family: 'BIZ UDGothic', sans-serif;
+}
+*/
+
+/*
+   課題など
+ */
+.admonition.exercise>.admonition-title:after, div.admonition.exercise>.admonition-title:after {
+    color: rgb(120, 81, 169);
+    content: var(--pst-icon-pencil);
+    font: var(--fa-font-solid);
+    height: 1rem;
+    left: 0.5rem;
+    line-height: inherit;
+    width: 1rem;
+}
+
+.admonition.exercise>.admonition-title {
+    background-color: rgb(240, 234, 247);
+}
+
+.admonition.exercise {
+    border-left-color: rgb(120, 81, 169);
+}
+
+/*
+ * なぜか定理環境でベルのアイコンが表示されてしまう現象を防ぐため
+ */
+.admonition.proof>.admonition-title:after, div.admonition.proof>.admonition-title:after {
+    content: "";
+}
+
+del {
+    background-color: #ffd7d5;
+    color: #cc9999;
+}
+
+ins {
+    background-color: #ccffd8;
+    color: #006600;
+}
+
+/*
+ * 余計なテキストを削除する
+ */
+@media print {
+    a.skip-link {
+        display: none;
+    }
+
+    /*
+    * {
+        font-family: "Noto Serif CJK JP",
+            serif;
+    }
+    */
+}

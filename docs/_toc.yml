@@ -1,0 +1,75 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+  - caption: 第1回（4月9日オンデマンド）
+    numbered: True
+    chapters:
+    - file: lec01/numerics
+    - file: lec01/error
+    - file: lec01/ieee754
+    - file: lec01/hw01
+  - caption: 第2回（4月16日）
+    numbered: True
+    chapters:
+    - file: lec02/python-intro
+    - file: lec02/math
+    - file: lec02/hw02
+  # - caption: 第3回（4月23日）
+  #   numbered: True
+  #   chapters:
+  #   - file: lec03/sle_gauss
+  #   - file: lec03/hw03
+  # - caption: 第4回（5月7日）
+  #   numbered: True
+  #   chapters:
+  #   - file: lec04/sle_lu
+  #   - file: lec04/hw04
+  # - caption: 第5回（5月14日）
+  #   numbered: True
+  #   chapters:
+  #   - file: lec05/nle_bracket
+  #   - file: lec05/hw05
+  # - caption: 第6回（5月21日）
+  #   numbered: True
+  #   chapters:
+  #   - file: lec06/nle_newton
+  #   - file: lec06/hw06
+  # - caption: 第8回（6月4日）
+  #   numbered: True
+  #   chapters:
+  #   - file: lec08/interpolation
+  #   - file: lec08/hw08
+  # - caption: 第9回（6月11日）
+  #   numbered: True
+  #   chapters:
+  #   - file: lec09/function_approximation
+  #   - file: lec09/hw09
+  # - caption: 第10回（6月18日）
+  #   numbered: True
+  #   chapters:
+  #   - file: lec10/integral
+  #   - file: lec10/hw10
+  # - caption: 第11回（6月25日）
+  #   numbered: True
+  #   chapters:
+  #   - file: lec11/ode
+  #   - file: lec11/hw11
+  # - caption: 第12回（7月2日）
+  #   numbered: True
+  #   chapters:
+  #   - file: lec12/eigen
+  #   - file: lec12/hw12
+  # - caption: 第13回（7月9日）
+  #   numbered: True
+  #   chapters:
+  #   - file: lec13/simulation
+  #   - file: lec13/hw13
+  - caption: 付録
+    chapters:
+    - file: appendix/sympy
+    - file: appendix/multivariate
+    # - file: appendix/rungekutta
+    - file: references
