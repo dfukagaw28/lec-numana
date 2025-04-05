@@ -1,9 +1,9 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: 2024年度 数値解析
+title: 2025年度 数値解析
 author: 深川 大路
-copyright: "2022-2024 by Daiji FUKAGAWA"
+copyright: "2022-2025 by Daiji FUKAGAWA"
 #logo: logo.png
 exclude_patterns:
   - '_build'
@@ -41,8 +41,8 @@ sphinx:
     - sphinx_proof
 
 # Launch buttons
-#launch_buttons:
-#  colab_url: "https://colab.research.google.com"
+launch_buttons:
+ colab_url: "https://colab.research.google.com"
 
 # Latex-style math
 #parse:

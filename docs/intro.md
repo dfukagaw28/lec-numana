@@ -9,7 +9,7 @@
 - 教室: 情報メディア館 JM303
 - [シラバス](https://syllabus.doshisha.ac.jp/html/2025/0807/10807532000.html)
 
-2024年度の資料は{こちら}`https://dfukagaw28.github.io/lec-numana-2024/intro.html`。
+2024年度の資料は[こちら](https://dfukagaw28.github.io/lec-numana-2024/intro.html)。
 
 ## 概要
 
