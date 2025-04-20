@@ -822,7 +822,7 @@ display(Math("f(x)=" + sym.latex(f)))
 
 # 関数 f の原始関数を求める
 F = sym.integrate(f, x)
-display(Math("\int f(x) dx = " + sym.latex(F)))
+display(Math("\\int f(x) dx = " + sym.latex(F)))
 ```
 
 積分定数は表示されない。
