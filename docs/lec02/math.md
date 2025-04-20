@@ -437,7 +437,7 @@ z = x.sum()
 print(z)
 ```
 
-[^sum-accuracy]: Python 3.12 から組み込み関数 [`sum()`](https://docs.python.org/3/library/functions.html#sum) のアルゴリズムが変わって精度が向上した（c.f. [gh-100425: Improve accuracy of builtin sum() for float inputs](https://github.com/python/cpython/issues/100425)）。
+[^sum-accuracy]: Python 3.12 から組み込み関数 [`sum()`](https://docs.python.org/3/library/functions.html#sum) のアルゴリズムが変わって精度が向上した（c.f. [gh-100425: Improve accuracy of builtin sum() for float inputs](https://github.com/python/cpython/issues/100425)）。Python 3.11 までは `sum([0.1] * 10)` の結果が `1` にならなかった。
 
 ベクトルでなく行列に対して和をとることもできる。すべての要素の和，行ごとの和，列ごとの和などについて計算できる。
 
