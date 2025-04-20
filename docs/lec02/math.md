@@ -414,20 +414,20 @@ print(x[:, 2])
 ### 合計
 
 Python の組み込み関数 `sum()` によって和を求めることができるが，精度に問題がある。
-たとえば，以下のように $0.1$ を 10 個足した合計は $1$ にならない。
+たとえば，以下のように $0.1, -0.5, 0.4$ の和は $0$ にならない [^sum-accuracy]。
 
 ```{code-cell}
-x = [.1] * 10
+x = [0.1, -0.5, 0.4]
 print(x)
 
 y = sum(x)
 print(y)
 ```
 
-組み込み関数 `sum()` よりも `numpy.sum()` 関数や `numpy.ndarray.sum()` メソッドの方が正確である。
+組み込み関数 `sum()` よりも `numpy.sum()` 関数や `numpy.ndarray.sum()` メソッドの方が正確かつ高速な傾向にある。
 
 ```{code-cell}
-x = np.array([.1] * 10)
+x = np.array([0.1, -0.5, 0.4])
 print(x)
 
 y = np.sum(x)
@@ -436,6 +436,8 @@ print(y)
 z = x.sum()
 print(z)
 ```
+
+[^sum-accuracy]: Python 3.12 から組み込み関数 [`sum()`](https://docs.python.org/3/library/functions.html#sum) のアルゴリズムが変わって精度が向上した（c.f. [gh-100425: Improve accuracy of builtin sum() for float inputs](https://github.com/python/cpython/issues/100425)）。
 
 ベクトルでなく行列に対して和をとることもできる。すべての要素の和，行ごとの和，列ごとの和などについて計算できる。
 
