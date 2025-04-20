@@ -35,12 +35,12 @@ x = np.linalg.solve(A, b)
 
 この `numpy.linalg.solve()` で使用されているアルゴリズムは，LU 分解を用いるものである。
 
-- [numpy.linalg.solve -- NumPy v1.26 Manual](https://numpy.org/doc/1.26/reference/generated/numpy.linalg.solve.html)
+- [numpy.linalg.solve -- NumPy v2.2 Manual](https://numpy.org/doc/2.2/reference/generated/numpy.linalg.solve.html)
 - [NAG Library Routine Document F07AAF (DGESV)](https://www.nag.com/numeric/fl/nagdoc_fl26/pdf/f07/f07aaf.pdf)
 
 NumPy とよく似ているが SciPy にも同様の関数 `scipy.linalg.solve()` がある。
 
-- [scipy.linalg.solve -- SciPy v1.13.0 Manual](https://docs.scipy.org/doc/scipy-1.13.0/reference/generated/scipy.linalg.solve.html)
+- [scipy.linalg.solve -- SciPy v1.15.2 Manual](https://docs.scipy.org/doc/scipy-1.15.2/reference/generated/scipy.linalg.solve.html)
 
 SciPy と NumPy の `linalg.solve()` は同様の使い方ができるが，SciPy の方は多くのオプション引数を持っており，状況に応じてより適切な結果を得るための工夫ができるようになっている。
 
