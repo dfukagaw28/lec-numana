@@ -17,16 +17,16 @@ parts:
     - file: lec02/python-intro
     - file: lec02/math
     - file: lec02/hw02
-  # - caption: 第3回（4月23日）
-  #   numbered: True
-  #   chapters:
-  #   - file: lec03/sle_gauss
-  #   - file: lec03/hw03
-  # - caption: 第4回（5月7日）
-  #   numbered: True
-  #   chapters:
-  #   - file: lec04/sle_lu
-  #   - file: lec04/hw04
+  - caption: 第3回（4月23日）
+    numbered: True
+    chapters:
+    - file: lec03/sle_gauss
+    - file: lec03/hw03
+  - caption: 第4回（5月7日）
+    numbered: True
+    chapters:
+    - file: lec04/sle_lu
+    - file: lec04/hw04
   # - caption: 第5回（5月14日）
   #   numbered: True
   #   chapters:
