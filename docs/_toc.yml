@@ -27,16 +27,16 @@ parts:
     chapters:
     - file: lec04/sle_lu
     - file: lec04/hw04
-  # - caption: 第5回（5月14日）
-  #   numbered: True
-  #   chapters:
-  #   - file: lec05/nle_bracket
-  #   - file: lec05/hw05
-  # - caption: 第6回（5月21日）
-  #   numbered: True
-  #   chapters:
-  #   - file: lec06/nle_newton
-  #   - file: lec06/hw06
+  - caption: 第5回（5月14日）
+    numbered: True
+    chapters:
+    - file: lec05/nle_bracket
+    - file: lec05/hw05
+  - caption: 第6回（5月21日）
+    numbered: True
+    chapters:
+    - file: lec06/nle_newton
+    - file: lec06/hw06
   # - caption: 第8回（6月4日）
   #   numbered: True
   #   chapters:
