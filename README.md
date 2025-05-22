@@ -12,8 +12,14 @@ Build a container image:
 $ podman build -t myjb .
 ```
 
-Create and run a docker container:
+Create and run a docker container to generate the website:
 
 ```
 $ podman run --rm -it -v $PWD:/work -w /work myjb jupyter-book build docs --all
+```
+
+or to generate the PDF file:
+
+```
+$ podman run --rm -it -v $PWD:/work -w /work myjb jupyter-book build docs --all --builder pdfhtml
 ```

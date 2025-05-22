@@ -54,6 +54,7 @@ parso==0.8.4
 pexpect==4.9.0
 pillow==11.1.0
 platformdirs==4.3.7
+playwright==1.52.0
 prompt_toolkit==3.0.50
 psutil==7.0.0
 ptyprocess==0.7.0
@@ -61,6 +62,7 @@ pure_eval==0.2.3
 pybtex==0.24.0
 pybtex-docutils==1.0.3
 pydata-sphinx-theme==0.15.4
+pyee==13.0.0
 Pygments==2.19.1
 pyparsing==3.2.3
 python-dateutil==2.9.0.post0

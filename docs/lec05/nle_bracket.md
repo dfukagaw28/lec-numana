@@ -298,7 +298,8 @@ def bisection(f, a, b, tol, maxiter=100):
     for iter in range(1, maxiter + 1):
         # 途中経過を表示する
         c = (a + b) / 2
-        print(f'{iter:3d} 区間[a={a:.6f},c={c:.6f},b={b:.6f}] 幅{b-a:.6f} f(a)={f(a):.6f} f(b)={f(b):.6f}')
+        print(f'{iter:3d} 区間[a={a:.6f},c={c:.6f},b={b:.6f}]'
+              + f' 幅{b-a:.6f} f(a)={f(a):.6f} f(b)={f(b):.6f}')
 
         if abs(a - b) < tol * 2:
             break
