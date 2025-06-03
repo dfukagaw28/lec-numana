@@ -37,16 +37,16 @@ parts:
     chapters:
     - file: lec06/nle_newton
     - file: lec06/hw06
-  # - caption: 第8回（6月4日）
-  #   numbered: True
-  #   chapters:
-  #   - file: lec08/interpolation
-  #   - file: lec08/hw08
-  # - caption: 第9回（6月11日）
-  #   numbered: True
-  #   chapters:
-  #   - file: lec09/function_approximation
-  #   - file: lec09/hw09
+  - caption: 第8回（6月4日）
+    numbered: True
+    chapters:
+    - file: lec08/interpolation
+    - file: lec08/hw08
+  - caption: 第9回（6月11日）
+    numbered: True
+    chapters:
+    - file: lec09/function_approximation
+    - file: lec09/hw09
   # - caption: 第10回（6月18日）
   #   numbered: True
   #   chapters:
