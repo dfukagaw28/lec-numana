@@ -267,12 +267,12 @@ $$
 
 $$
 \ell_k(x_i)
-= \delta_{kj}
+= \delta_{ki}
 = \begin{cases} 1 & \text{$k = i$ のとき} \\ 0 & \text{$k \neq i$ のとき} \end{cases}
 $$
 
-ただし，$\delta_{kj}$ はクロネッカーのデルタ（Kronecker delta）である。
-これらの条件を満たす $2$次関数 $\ell_k(x)$ はそれぞれ以下のようになる。
+ただし，$\delta_{ki}$ はクロネッカーのデルタ（Kronecker delta）である。
+これらの条件を満たすには，$2$次関数 $\ell_k(x)$ をそれぞれ以下のように定義すればよい。
 
 $$
 \ell_k(x) = \frac{\prod_{i \neq k}(x - x_i)}{\prod_{i \neq k}(x_k - x_i)}
