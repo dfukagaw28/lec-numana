@@ -47,16 +47,16 @@ parts:
     chapters:
     - file: lec09/function_approximation
     - file: lec09/hw09
-  # - caption: 第10回（6月18日）
-  #   numbered: True
-  #   chapters:
-  #   - file: lec10/integral
-  #   - file: lec10/hw10
-  # - caption: 第11回（6月25日）
-  #   numbered: True
-  #   chapters:
-  #   - file: lec11/ode
-  #   - file: lec11/hw11
+  - caption: 第10回（6月18日）
+    numbered: True
+    chapters:
+    - file: lec10/integral
+    - file: lec10/hw10
+  - caption: 第11回（6月25日）
+    numbered: True
+    chapters:
+    - file: lec11/ode
+    - file: lec11/hw11
   # - caption: 第12回（7月2日）
   #   numbered: True
   #   chapters:

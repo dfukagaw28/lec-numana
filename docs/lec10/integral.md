@@ -255,8 +255,8 @@ print(np.pi / 4)
 
 [^precision-of-pi]: なお，`math.pi` と `numpy.pi` の型はいずれも float であるため，その精度は 10 進数で 15～16 桁程度である（IEEE754 倍精度浮動小数点数の仮数部は 52+1 bit であり， $\log_{10} 2^{52+1} \approx 15.95$ である）。
 円周率 $\pi$ の（近似）値は，
-標準パッケージ math では [ここ](https://github.com/python/cpython/blob/v3.12.3/Include/pymath.h#L14)（CPython v3.12.3），
-NumPy では [ここ](https://github.com/numpy/numpy/blob/v2.0.0rc2/numpy/_core/include/numpy/npy_math.h#L77) （NumPy v2.0.0rc2）でそれぞれ定義されている。
+標準パッケージ math では [ここ](https://github.com/python/cpython/blob/v3.13.5/Include/pymath.h#L14)（CPython v3.13.5），
+NumPy では [ここ](https://github.com/numpy/numpy/blob/v2.3.0/numpy/_core/include/numpy/npy_math.h#L77) （NumPy v2.3.0）でそれぞれ定義されている。
 桁数の違いに驚くかもしれないが，Python では現在のところ `3.141592653589793238462643383279502884 == 3.141592653589793` が `True` になることをふまえると納得できるかもしれない。
 
 台形公式によって定積分を求める関数の実装例を以下に示す。
@@ -569,9 +569,11 @@ $$
 
 ## NumPy, SciPy を用いた数値積分
 
-台形公式は，NumPy の [`numpy.trapz()` 関数](https://numpy.org/doc/1.26/reference/generated/numpy.trapz.html) を用いて計算することもできる。
+台形公式は，NumPy の [`numpy.trapezoid()` 関数](https://numpy.org/doc/stable/reference/generated/numpy.trapezoid.html) を用いて計算することもできる[^numpy-trapezoid]。
 結果は同一になる（はず）。
 引数の与え方の違いに注意が必要。
+
+[^numpy-trapezoid]: `numpy.trapezoid()` 関数は，NumPy 2.0 で追加された。NumPy 1.x 環境では `numpy.trapz()` という名前であった。
 
 ```{code-cell}
 import numpy as np
@@ -579,11 +581,11 @@ import numpy as np
 f = lambda x: np.sqrt(1 - x ** 2)
 a, b = 0, 1
 
-print('trapezoid() vs numpy.trapz()')
+print('trapezoid() vs numpy.trapezoid()')
 for n in range(1, 11):
     s1 = trapezoid(f, a, b, n)
     x = np.linspace(a, b, n + 1)
-    s2 = np.trapz(f(x), x)
+    s2 = np.trapezoid(f(x), x)
     print(f'{n:3d} {s1:.16f} {s2:.16f}')
 ```
 
