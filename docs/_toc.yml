@@ -57,19 +57,19 @@ parts:
     chapters:
     - file: lec11/ode
     - file: lec11/hw11
-  # - caption: 第12回（7月2日）
-  #   numbered: True
-  #   chapters:
-  #   - file: lec12/eigen
-  #   - file: lec12/hw12
-  # - caption: 第13回（7月9日）
-  #   numbered: True
-  #   chapters:
-  #   - file: lec13/simulation
-  #   - file: lec13/hw13
+  - caption: 第12回（7月2日）
+    numbered: True
+    chapters:
+    - file: lec12/eigen
+    - file: lec12/hw12
+  - caption: 第13回（7月9日）
+    numbered: True
+    chapters:
+    - file: lec13/simulation
+    - file: lec13/hw13
   - caption: 付録
     chapters:
     - file: appendix/sympy
     - file: appendix/multivariate
-    # - file: appendix/rungekutta
+    - file: appendix/rungekutta
     - file: references
